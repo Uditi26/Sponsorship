@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sponsorship</title>
+  <link rel="stylesheet" href="../public/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+
+<html lang="en"> 
+
+ <head> 
+
+  <meta charset="UTF-8"> 
+
+  <title> </title> 
+
+  <link rel="stylesheet" href="./style.css"> 
+
+ </head> 
+
+ <body> 
+  <script>const form = document.querySelector("#form")
+const submitButton = document.querySelector("#submit")
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw73f-wrrMb6u_zzO-j1-FGlmCGtjp0V2x2dygM9eoAXCn14vVQfpOh4l0rC9qvhUmjag/exec'
+
+form.addEventListener('submit', e => {
+  submitButton.disabled = true
+  e.preventDefault()
+  let requestBody = new FormData(form)
+  fetch(scriptURL, { method: 'POST', body: requestBody})
+    .then(response => {
+       //alert('Success!', response)
+       res.send("Data Entered")
+       submitButton.disabled = false
+      })
+    .catch(error => {
+    alert('Error!', error.message)
+      submitButton.disabled = false
+
+    }
+    )
+})</script>
+
+  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+   <div class="signin"> 
+
+    <div class="content"> 
+
+     <h2>Sponsorship Details</h2> 
+
+     <div class="form"> 
+        <form id="form" action="https://script.google.com/macros/s/AKfycbw73f-wrrMb6u_zzO-j1-FGlmCGtjp0V2x2dygM9eoAXCn14vVQfpOh4l0rC9qvhUmjag/exec" method="POST">
+
+      <div class="inputBox"> 
+
+       <input name="name" id="name" type="text" required> <i>Comapny Name</i> 
+
+      </div> 
+
+      <div class="inputBox"> 
+
+       <input name="poc" id="poc" type="text" required> <i>Company POC</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input name="mail" id="mail" type="text" required> <i>Company Mail</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input name="contact" id="contact" type="number" required> <i>Company Contact</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input name="amt" id="amt" type="text" required> <i>Expected Amount</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input name="bms" id="bms" type="text" required> <i>POC mail</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input name="bmsp" id="bmsp" type="number" required> <i>POC Contact</i> 
+
+      </div> 
+
+      {{!-- <div class="links"> <a href="#">Forgot Password</a> <a href="signup">Signup</a> 
+
+      </div>   --}}
+
+      <div class="inputBox"> 
+
+       <input name="submit" class="sub" type="submit" value="Submit">  </div> 
+    </form>
+
+     
+
+     </div> 
+
+    </div> 
+
+   </div> 
+
+  </section> <!-- partial --> 
+{{!-- <script src="../src/home.js"></script> --}}
+ </body>
+
+</html>
+{{!-- <script src="../src/home.js"></script> --}}
+  
+</body>
+</html>
