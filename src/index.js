@@ -4,7 +4,7 @@ const app = express()
 const hbs = require("hbs")
 // const h=require("../src/home")
 const LogInCollection = require("./mongodb")
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 app.use(express.json())
 app.use(express.static('tempelates'))
 
